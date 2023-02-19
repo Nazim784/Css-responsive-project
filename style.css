@@ -1,0 +1,309 @@
+/*.......... Nav bar section......*/
+.navbar {
+    display: flex;
+    gap: 100px;
+    margin: 50px;
+
+}
+
+.topnav {
+    width: 500px;
+    text-align: right;
+    margin-left: 700px;
+    top: 20px;
+
+}
+
+.topnav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/*..........banner section..........*/
+.banner-text {
+
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+.banner-text .btn {
+    border: none;
+    background: #FF900E;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 1350px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/*..........team section..........*/
+
+.team-img {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+}
+
+.btn {
+    border: none;
+    background: #FF900E;
+    border-radius: 5px;
+    color: white;
+
+    padding: 10px;
+}
+
+.team {
+    display: flex;
+}
+
+.team-text {
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*...........team text span1 header(color part gray).........*/
+.span1 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+
+    /* Dark 01 */
+
+    color: #131313;
+}
+
+/*...........team text span2 header(color part yellow).........*/
+.span2 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+
+    color: #FF900E;
+}
+
+/*..............feature part..........*/
+.feature-header {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 53px;
+
+    /* Dark 01 */
+
+    color: #131313;
+    border-left: 4px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(crimson, red);
+    border-image-slice: 1;
+}
+
+
+
+.feature {
+    display: grid;
+
+}
+
+.feature-section {
+    display: flex;
+    gap: 10px;
+    padding: 50px;
+}
+
+.feature-box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.architect-btn {
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+
+    text-align: center;
+    padding: 10px;
+    color: white;
+    width: 342px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: -50px;
+    border: none;
+    background: #FF900E;
+    border-radius: 5px;
+}
+
+.facts {
+    margin: 50px;
+}
+
+.some-facts {
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 53px;
+    width: 600px;
+
+    color: #131313;
+}
+
+.icon {
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    margin-left: 75px;
+    border: 1px solid #FF900E;
+
+}
+
+/*------------------
+  Transition Task
+--------------------*/
+
+.icon:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.achievement {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsors-title {
+    text-align: center;
+}
+
+.sponsors-title h1 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    /* identical to box height */
+
+
+    /* Dark 01 */
+
+    color: #131313;
+}
+
+.sponsors-title p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 53px;
+    /* identical to box height */
+
+
+    /* Dark 01 */
+
+    color: #131313;
+}
+
+.sponsers>img {
+    justify-content: center;
+    margin-left: 50px;
+    margin: 40px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.goals {
+    margin-left: 100px;
+    display: flex;
+}
+
+/*------------------
+    medai query
+------------------- */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        display: block;
+        text-align: left;
+        margin-left: -600px;
+    }
+
+    .banner img {
+        width: 550px;
+    }
+
+    .team {
+        display: block;
+    }
+
+    .team-img {
+        display: block;
+    }
+
+    .feature-section {
+        display: block;
+        gap: 10px;
+        padding: 50px;
+    }
+
+    .architect-btn {
+        background: #FF900E;
+        margin: 6px;
+        padding: 2px;
+        width: 350px;
+        height: 80px;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .achievement {
+        display: block;
+    }
+
+    .icon {
+        text-align: center;
+        margin-bottom: 40px;
+        border: 1px solid #FF900E;
+    }
+
+    footer {
+        width: 350px;
+    }
+
+    .goals {
+        display: block;
+    }
+
+    .feature-section img {
+        width: 340px;
+
+    }
+
+    .some-facts {
+        font-weight: 200;
+        font-size: 25px;
+        line-height: 53px;
+        width: 600px;
+        width: 400px;
+        color: #0c0b0b;
+    }
+}
